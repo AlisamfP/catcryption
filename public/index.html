@@ -2,13 +2,17 @@
   <head>
     <title>Catcryption</title>
   </head>
+  <script type="text/javascript" src="/js/steganography.js"></script>
   <body>
     <div class="container">
-      <label for="url">Url to encrypt: </label>
-      <input name="url" type="url" placeholder="Paste Image Url Here...">
-      <button name="catcrypt" type="submit">CATCRYPT!</button>
+      <label for="textToEncode">Text to Encode:</label>
+      <input id="textToEncode" type="text" value="Hello, World!" name="textToEncode" placeholde="Write Text To Encode Here...">
+      <button id="encryptButton" type="button">CATCRYPT IT!
+      <button id="decryptButton" type="button">DE-CRYPT IT!
     </div>
+    <span id="decryptedText"></span>
+    <img id="encryptedImage" />
+
   </body>
-  <script type="text/javascript" src="/js/steganography.js"></script>
   <script type="text/javascript" src="/dist/application.js"></script>
 </html>
